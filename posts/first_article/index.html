@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link href="/static/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/69e2443572.js" crossorigin="anonymous"></script>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="/pygments.css">
+</head>
+
+<body>
+  <main id="main">
+    
+<style>
+  body::before {
+    background: #040404 url("/static/img/portfolio/post.jpg");
+  }
+</style>
+<!-- ======= шаблон для поста ======= -->
+<div id="portfolio-details" class="portfolio-details">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2 class="portfolio-title">Getting started with Flask</h2>
+      </div>
+      <div class="col-lg-8 portfolio-info">
+        <h3></h3>
+        <ul>
+          <li><strong>Category</strong>: Flask</li>
+          <li><strong>Project</strong>: Flask course for beginners</li>
+          <li><strong>The article has been published</strong>: 2022-06-12</li>
+          <li><strong>Platform</strong>: <a href="https://flask.palletsprojects.com">Flask Workshop</a></li>
+        </ul>
+        <p>
+          <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+</code></pre></div>
+
+<p>The first line imports the Flask class from the flask package.</p>
+<p>The second line creates a Flask object. To do this, the Flask constructor is assigned the <strong>name</strong> argument. The Flask constructor must have one required argument. They are the name of the package. In most cases, the <strong>name</strong> value is fine. The app's package name is used by the Flask framework to find static files, templates, etc.</p>
+<h2>Creating a route (paths)</h2>
+<p>A route (or path) is used in the Flask framework to bind a URL to a view function. This function responds to a request. In Flask, the route decorator is used to bind a URL to a function. Here is how the route is created.</p>
+<div class="codehilite"><pre><span></span><code><span class="nv">@app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<span class="n">def</span><span class="w"> </span><span class="k">index</span><span class="p">()</span><span class="err">:</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s1">&#39;Hello World&#39;</span>
+</code></pre></div>
+
+<p>This code assigns the index() function as the root URL handler in the application. In other words, every time the application receives a request where the path is /, the index() function is called, and the request ends there.</p>
+        </p>
+      </div>
+    </div>
+  </div>
+</div><!-- конец карточки -->
+<!-- конец поста -->
+
+  </main>
+  <!-- Скрипты -->
+  <script src="/static/assets/purecounter/purecounter.js"></script>
+  <script src="/static/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+
+</html>
