@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-
+/*
 .Clock{
     width: 350px;
     height: 350px;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 .hr, .min, .sec{
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
+    /*align-items: center;
     position: absolute;
     border-radius: 50%;
    
@@ -134,18 +134,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hr {
-    animation: hourAnimation 43200s infinite linear; /* 12 tuntia */
+    animation: hourAnimation 43200s infinite linear; /* 12 tuntia 
 }
 
 .min {
-    animation: minuteAnimation 3600s infinite linear; /* 60 minuuttia */
+    animation: minuteAnimation 3600s infinite linear; /* 60 minuuttia 
 }
 
 .sec {
-    animation: secondAnimation 60s infinite linear; /* 60 sekuntia */
+    animation: secondAnimation 60s infinite linear; /* 60 sekuntia 
 }
 
-
+*/
 
 #header {
   transition: ease-in-out 0.3s;
