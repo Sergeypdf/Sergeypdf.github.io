@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom:25%;
+    margin-bottom:25rem;
     background: url(https://dev-to-uploads.s3.amazonaws.com/uploads/articles/sa5ueuzzu2l7j8iv7bk8.jpg);
     background-size: cover;
     border: 6px solid #3ac7e0;
