@@ -5,8 +5,7 @@ body {
   color: #fff;
   position: relative;
   background: transparent;
-  margin: 0%;
-  overflow: auto;
+ 
 }
 body::before {
   content: "";
