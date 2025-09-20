@@ -5,7 +5,9 @@ body {
   color: #fff;
   position: relative;
   background: transparent;
- 
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 body::before {
   content: "";
@@ -36,6 +38,17 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
+}
+
+/* Canvas animation styles */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: -1;
+  pointer-events: none;
 }
 
 /*--------------------------------------------------------------
@@ -151,11 +164,11 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   transition: ease-in-out 0.3s;
   position: relative;
-  height: 130vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   z-index: 997;
-  overflow-y: auto;
+  overflow: hidden;
 }
 #header * {
   transition: ease-in-out 0.3s;
@@ -699,6 +712,10 @@ section .container {
   background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .services .icon-box .icon {
   margin: 0 auto;
