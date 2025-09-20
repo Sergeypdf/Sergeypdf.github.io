@@ -710,9 +710,9 @@ section .container {
 .services .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
-  padding: 80px 20px;
+  padding: 40px 20px;
   transition: all ease-in-out 0.3s;
-  min-height: 300px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -750,6 +750,11 @@ section .container {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
+  flex-shrink: 0;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .services .icon-box h4 a {
   color: #fff;
@@ -758,6 +763,11 @@ section .container {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
 }
 .services .icon-box:hover {
   background: #1e90ff;
